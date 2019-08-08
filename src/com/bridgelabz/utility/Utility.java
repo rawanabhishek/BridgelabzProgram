@@ -10,6 +10,10 @@
 package com.bridgelabz.utility;
 
 
+/**
+ * @author user
+ *
+ */
 public class Utility {
 	
 	/**
@@ -23,6 +27,14 @@ public class Utility {
 		return result ;
 	}
 	
+
+	
+	/**
+	 * @param a
+	 * @param b
+	 * @param c
+	 * @return
+	 */
 	public int OperationOne(int a , int b ,int c) {
 		int Operation1 = (a+b*c);
 		
@@ -52,5 +64,73 @@ public class Utility {
 		
 		return Operation4 ;
 	}
+    
+    /******************************************************************************
+    
+     *  Purpose: To take 3 values from user and perform set of opertions on them to
+     *           understand there presedence
+     *
+     *  @author  Abhishek Rawat
+     *  @version 1.0
+     *  @since   08-08-2019
+     *
+     ******************************************************************************/
+    
+    public double OperationOneDouble(double a , double b ,double c) {
+		double Operation1 = (a+b*c);
+		
+		
+		return Operation1 ;
+	}
+	
+	public double OperationTwoDouble(double a ,double b ,double c ) {
+		
+		double Operation2 =(a*b+c);
+		
+		
+		return Operation2 ;
+	}
+	
+    public double OperationThreeDouble(double a, double b ,double c ) {
+		
+		
+		double Operation3 =(a%b+c);
+		
+		return Operation3 ;
+	}
+    public double OperationFourDouble(double a, double b ,double c ) {
+		
+		
+		double Operation4 =(a%b+c);
+		
+		return Operation4 ;
+	}
+    
+    /******************************************************************************
+
+     *  Purpose: to Check the given year is a leap year or not
+     *
+     *  @author  Abhishek Rawat
+     *  @version 1.0
+     *  @since   08-08-2019
+     *
+     ******************************************************************************/
+
+     
+     
+     public String Leapyear(int year) {
+    	 if(year%4==0 && year%100!=0) {
+    		 return year + " is a leap year" ;
+    	 }
+    	 else if(year%4==0 && year%400==0) {
+    		 return year + " is  a leap year" ;
+    	 }
+    	 else {
+    		 return year + " is not a leap year";
+    	 }
+     }
+
 
 }
+
+

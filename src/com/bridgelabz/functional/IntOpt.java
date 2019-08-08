@@ -29,9 +29,9 @@ public class IntOpt {
 	c=scanner.nextInt();
 	
 	int Operation1 = utility.OperationOne(a, b, c);
-	int Operation2 = utility.OperationTwo(Operation1, b, c);
-	int Operation3 = utility.OperationThree(Operation2, b, c);
-	int Operation4 = utility.OperationFour(Operation3, b, c);
+	int Operation2 = utility.OperationTwo(a, b, c);
+	int Operation3 = utility.OperationThree(a, b, c);
+	int Operation4 = utility.OperationFour(a, b, c);
 	
 	System.out.println("Performing Set of operations");
 	System.out.println("a+b*c : "+Operation1);
