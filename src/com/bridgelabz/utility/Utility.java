@@ -244,9 +244,9 @@ public class Utility {
     
 /********************************************************************************************************
 
-    Purpose: to print sum of two random integers between 1 and 6 
+    Purpose: to find the windchill temperature in farenheit
    
-    * @return  return sum of two random number between 1 to 6
+    * @return  return wind chill temperature 
     */
     
     public String wind(double temperature , double  windspeed) {
@@ -256,7 +256,41 @@ public class Utility {
     	
     	
     }
+ /********************************************************************************************************
+
+    Purpose: to find the windchill temperature in farenheit
+   
+    * @return  return wind chill temperature 
+    */
+    public String tempconversion(double temperature ,int choice ) {
+    	if(choice ==1) {
+    		double CelsiustoFehranheit = (temperature*9/5)+32 ;
+    		return "The Temperature Converted in Celsius to Fehranheit is  :"+CelsiustoFehranheit ;
+    	}
+    	else if (choice ==2) {
+    		double FehranheitToCelsius =(temperature-32)*5/9 ;
+    		return "The temperature Converted In Fehranheit to Celsius is :"+FehranheitToCelsius ;
+    	}
+		return null;
     
+    	
+    }
+    
+    /********************************************************************************************************
+
+    Purpose: to find Min , Max And Average of random 5 Values
+   
+    * @return  return Min , Max and Average
+    */
+    
+    public String Random(double value1 ,double value2 ,double value3 ,double value4 ,double value5) {
+    	double RandomMin =Math.min(value1, Math.min(value2, Math.min(value3, Math.min(value4, value5))));
+    	double RandomMax =Math.max(value1, Math.max(value2, Math.max(value3, Math.max(value4, value5))));
+    	double RandomAverage=(value1+value2+value3+value4+value5)/5;
+    	
+    	return "Random Minimum is : "+RandomMin+" Random Max is : "+RandomMax+" Random average is : "+RandomAverage ;
+    	
+    }
     
 }
 
