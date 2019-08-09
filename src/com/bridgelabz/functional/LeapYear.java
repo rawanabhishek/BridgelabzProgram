@@ -1,3 +1,12 @@
+/******************************************************************************
+ 
+ *  Purpose: To Check Weather the Given year is a Leap year or Not According to Gregorian Calander
+ *
+ *  @author  Abhishek Rawat
+ *  @version 1.0
+ *  @since   08-08-2019
+ *
+ ******************************************************************************/
 package com.bridgelabz.functional;
 
 import java.util.Scanner;
