@@ -96,14 +96,7 @@ public class Utility {
     
      *  Purpose: To take 3 values from user and perform set of opertions on them to
      *           understand there presedence
-     *
-     *  @author  Abhishek Rawat
-     *  @version 1.0
-     *  @since   08-08-2019
-     *
- ******************************************************************************/
-    
-    /**
+   
      * @param a Take  input value a from user
      * @param b Take  input value b from user
      * @param c Take input value c from user
@@ -115,8 +108,8 @@ public class Utility {
 		
 		return Operation1 ;
 	}
-/****************************************************************************************************/  
-    /**
+/**************************************************************************************************** 
+ 
      * @param a Take  input value a from user
      * @param b Take  input value b from user
      * @param c Take input value c from user
@@ -130,9 +123,9 @@ public class Utility {
 		
 		return Operation2 ;
 	}
-/****************************************************************************************************/
+/****************************************************************************************************
 	
-	 /**
+	 
      * @param a Take  input value a from user
      * @param b Take  input value b from user
      * @param c Take input value c from user
@@ -146,13 +139,13 @@ public class Utility {
 		
 		return Operation3 ;
 	}
-/****************************************************************************************************/
+/****************************************************************************************************
     
-    /**
+    
      * @param a Take  input value a from user
      * @param b Take  input value b from user
      * @param c Take input value c from user
-     * @return
+     * @return 
      */
     public double OperationFourDouble(double a, double b ,double c ) {
 		
@@ -165,16 +158,11 @@ public class Utility {
 /******************************************************************************
 
      *  Purpose: to Check the given year is a leap year or not
-     *
-     *  @author  Abhishek Rawat
-     *  @version 1.0
-     *  @since   08-08-2019
-     *
-******************************************************************************/
-
-     
-     
-     public String Leapyear(int year) {
+     /**
+     * @param year  take input from user to check the leap year
+     * @return      return weather the given year is a leap year or not
+     */
+    public String Leapyear(int year) {
     	 if(year%4==0 && year%100!=0) {
     		 return year + " is a leap year" ;
     	 }
@@ -189,13 +177,15 @@ public class Utility {
    /******************************************************************************
 
       *  Purpose: to Check the date lies between March 20 to June 20 
-      *
-      *  @author  Abhishek Rawat
-      *  @version 1.0
-      *  @since   09-08-2019
-      *
-      ******************************************************************************/
-     public String SpringSeason(int month , int date ) {
+ 
+     
+     /**
+     * @param month take input from user to check the range of month
+     * @param date  take input from user to check the range of date
+     * @return return the true if the value falls in the given range and return
+     *          false if the value not falls in the given range 
+     */
+    public String SpringSeason(int month , int date ) {
     	 if((month==3 && date<=31 && date>=20) || (month==4 && date<=30) ||(month==5 && date<=31) || (month==6 && date<=20) ) {
     		 return "true" ;
     		 
@@ -205,17 +195,10 @@ public class Utility {
     	 }
      }
      
-/******************************************************************************
 
-      *  Purpose: to find the root of the quadratic equation
-      *
-      *  @author  Abhishek Rawat
-      *  @version 1.0
-      *  @since   09-08-2019
-      *******************************************************************************/
+ /********************************************************************************
+    Purpose: to find the root of the quadratic equation 
 
-     
-     /**
      * @param a taking value of a from user
      * @param b taking value of b from user
      * @param c taking value of c from user
@@ -234,18 +217,47 @@ public class Utility {
     /******************************************************************************
 
      *  Purpose: to find the euclidean distance
-     *
-     *  @author  Abhishek Rawat
-     *  @version 1.0
-     *  @since   09-08-2019
-     *******************************************************************************/
-
-    
+     * @param x  to take the value of x from the user
+     * @param y  to take the value of y from the user
+     * @return   return the value of distance 
+     */
     public Double Distance(double x , double y ) {
     	double distance = Math.sqrt(x*x+y*y);
     	
     	return  distance;
     }
+    
+/********************************************************************************************************
+
+     Purpose: to print sum of two random integers between 1 and 6 
+    
+     * @return  return sum of two random number between 1 to 6
+     */
+    public int random() {
+    	int side = 6;
+    	int a = 1 + (int)(Math.random()*side);
+    	int b = 1 + (int)(Math.random()*side);
+    	int sum = a+b;
+    	return sum;
+    	
+    }
+    
+/********************************************************************************************************
+
+    Purpose: to print sum of two random integers between 1 and 6 
+   
+    * @return  return sum of two random number between 1 to 6
+    */
+    
+    public String wind(double temperature , double  windspeed) {
+    	
+            double windchill =35.74 +0.6215*temperature +(0.4275*temperature - 35.75)*Math.pow(windspeed, 0.16);
+    		return "the wind Chill in Fahrenheit is : "+windchill;
+    	
+    	
+    }
+    
+    
 }
 
 
