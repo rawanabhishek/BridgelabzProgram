@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /******************************************************************************
  
  *  Purpose: To print five random no and print there max ,min , average
@@ -7,6 +8,8 @@
  *  @since   07-08-2019
  *
  ******************************************************************************/
+=======
+>>>>>>> a2b5793104545089a76d3dc86b053ff6497548a2
 package com.bridgelabz.functional;
 
 import com.bridgelabz.utility.Utility;

@@ -292,6 +292,7 @@ public class Utility {
     	
     }
     
+<<<<<<< HEAD
     /********************************************************************************************************
 
     Purpose: to find The loan amount for a given period of time with given intrest
@@ -536,6 +537,8 @@ Purpose: to print percentage of head and tails
       return "Percentage of Head is "+averagehead+ "Percentage of tail is "+averagetail ;
     	
     }
+=======
+>>>>>>> a2b5793104545089a76d3dc86b053ff6497548a2
 }
 
 
